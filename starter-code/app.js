@@ -182,17 +182,17 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scope();
+joe.scope();
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scopeArrow();
+joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+//Student {name: 'Joe Schmoe', age: 100, hometown: 'Anytown, USA'}
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+//Window {window: Window, self: Window, document: document, name: '', location: Location, …}
 // 3. Explain why "this" is different when an arrow function is used.
-//
+//Arrow functions don't rebind the value of "this"
